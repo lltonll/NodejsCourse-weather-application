@@ -35,6 +35,8 @@ const weather = (lat, lon, callback) => {
                 descriptions: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
+                uv_index: body.current.uv_index,
+                humidity: body.current.humidity
                 // error: body.error
             })
         }

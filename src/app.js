@@ -74,13 +74,15 @@ app.get('/weather', (req, res) => {
             }
             // console.log(req.query.address)
             res.send({
-            lat,
-            lon,
-            PlaceName,
-            descriptions,
-            temperature,
-            feelslike,
-            address: req.query.address
+                lat,
+                lon,
+                PlaceName,
+                descriptions,
+                temperature,
+                feelslike,
+                address: req.query.address,
+                uv_index,
+                humidity
             })
         })
     })

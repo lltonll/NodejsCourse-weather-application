@@ -32,9 +32,9 @@ weatherForm.addEventListener('submit', (e) => {
             messageTwo.textContent = data.error
             // console.log(data.error)
         } else {
-            messageOne.textContent = data.temperature
+            messageOne.textContent = 'Right now temperature is ' + data.temperature + 'degrees and UV index is ' + data.uv_index
             messageTwo.textContent = data.feelslike
-            messageThree.textContent = data.PlaceName
+            messageThree.textContent = 'Request location is ' + data.PlaceName
 
             // console.log(data.temperature)
             // console.log(data.feelslike)
